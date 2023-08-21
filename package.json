@@ -9,7 +9,10 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --quiet",
     "typecheck": "tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest --run",
+    "test:coverage": "vitest --coverage",
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.0",
@@ -20,11 +23,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
+    "@vitest/coverage-c8": "^0.33.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.0",
@@ -33,8 +38,11 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "happy-dom": "^10.10.4",
     "prettier": "^3.0.2",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vitest": "^0.34.2",
+    "vitest-fetch-mock": "^0.2.2"
   }
 }
